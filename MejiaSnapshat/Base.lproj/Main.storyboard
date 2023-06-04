@@ -1,24 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Iniciar Sesion View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IniciarSesionViewController" customModule="MejiaSnapshat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grabar" translatesAutoresizingMaskIntoConstraints="NO" id="8IS-Rk-wjY">
+                                <rect key="frame" x="121.66666666666669" y="89" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ITu-y9-0Av"/>
+                                    <constraint firstAttribute="width" constant="150" id="wNf-J6-HO7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdg-4q-NoD">
+                                <rect key="frame" x="163.33333333333334" y="264" width="66.666666666666657" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dvc-Eo-P8x">
+                                <rect key="frame" x="96.666666666666686" y="310" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="BdD-pq-zI5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKZ-2d-ld6">
+                                <rect key="frame" x="146.66666666666666" y="369" width="99.666666666666657" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingrese su contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kPn-nY-6nT">
+                                <rect key="frame" x="96.666666666666686" y="415" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="kv3-X9-BtO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4a-WQ-MFE">
+                                <rect key="frame" x="96.666666666666686" y="479" width="200" height="38"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Lku-vl-aTO"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Iniciar sesión">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="iniciarSesionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ux-2A-XI5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZKZ-2d-ld6" firstAttribute="top" secondItem="Dvc-Eo-P8x" secondAttribute="bottom" constant="25" id="4m9-jd-DAJ"/>
+                            <constraint firstItem="Dvc-Eo-P8x" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="EEU-jc-j2S"/>
+                            <constraint firstItem="ZKZ-2d-ld6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="EZt-mb-YXN"/>
+                            <constraint firstItem="d4a-WQ-MFE" firstAttribute="top" secondItem="kPn-nY-6nT" secondAttribute="bottom" constant="30" id="I16-r0-aQN"/>
+                            <constraint firstItem="kPn-nY-6nT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Jqh-HP-EvP"/>
+                            <constraint firstItem="hdg-4q-NoD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fZN-q7-wcY"/>
+                            <constraint firstItem="kPn-nY-6nT" firstAttribute="top" secondItem="ZKZ-2d-ld6" secondAttribute="bottom" constant="25" id="lUP-bQ-8lO"/>
+                            <constraint firstItem="8IS-Rk-wjY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mkA-cL-2hF"/>
+                            <constraint firstItem="Dvc-Eo-P8x" firstAttribute="top" secondItem="hdg-4q-NoD" secondAttribute="bottom" constant="25" id="php-Mc-EpS"/>
+                            <constraint firstItem="d4a-WQ-MFE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rPR-sU-zWW"/>
+                            <constraint firstItem="8IS-Rk-wjY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="ycg-cp-Zwt"/>
+                            <constraint firstItem="hdg-4q-NoD" firstAttribute="top" secondItem="8IS-Rk-wjY" secondAttribute="bottom" constant="25" id="zF5-67-wQo"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="Dvc-Eo-P8x" id="pvA-cs-aXg"/>
+                        <outlet property="passwordTextField" destination="kPn-nY-6nT" id="bMx-r2-TGG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="26" y="-2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="grabar" width="50" height="50"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
