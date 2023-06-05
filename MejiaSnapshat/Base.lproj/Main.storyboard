@@ -66,6 +66,19 @@
                                     <action selector="iniciarSesionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ux-2A-XI5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Pj-9v-FHE">
+                                <rect key="frame" x="89" y="550" width="215" height="35"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="dM8-Hg-a06"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Iniciar sesion con Google"/>
+                                <connections>
+                                    <action selector="iniciarSesionGoogleTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0at-E3-7X6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -73,11 +86,13 @@
                             <constraint firstItem="ZKZ-2d-ld6" firstAttribute="top" secondItem="Dvc-Eo-P8x" secondAttribute="bottom" constant="25" id="4m9-jd-DAJ"/>
                             <constraint firstItem="Dvc-Eo-P8x" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="EEU-jc-j2S"/>
                             <constraint firstItem="ZKZ-2d-ld6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="EZt-mb-YXN"/>
+                            <constraint firstItem="6Pj-9v-FHE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FTc-6T-UJD"/>
                             <constraint firstItem="d4a-WQ-MFE" firstAttribute="top" secondItem="kPn-nY-6nT" secondAttribute="bottom" constant="30" id="I16-r0-aQN"/>
                             <constraint firstItem="kPn-nY-6nT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Jqh-HP-EvP"/>
                             <constraint firstItem="hdg-4q-NoD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fZN-q7-wcY"/>
                             <constraint firstItem="kPn-nY-6nT" firstAttribute="top" secondItem="ZKZ-2d-ld6" secondAttribute="bottom" constant="25" id="lUP-bQ-8lO"/>
                             <constraint firstItem="8IS-Rk-wjY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mkA-cL-2hF"/>
+                            <constraint firstItem="6Pj-9v-FHE" firstAttribute="top" secondItem="d4a-WQ-MFE" secondAttribute="bottom" constant="33" id="nAY-s6-wyS"/>
                             <constraint firstItem="Dvc-Eo-P8x" firstAttribute="top" secondItem="hdg-4q-NoD" secondAttribute="bottom" constant="25" id="php-Mc-EpS"/>
                             <constraint firstItem="d4a-WQ-MFE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rPR-sU-zWW"/>
                             <constraint firstItem="8IS-Rk-wjY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="ycg-cp-Zwt"/>
